@@ -15,16 +15,16 @@ div {
   
   background-color: rgb(246, 255, 196);
   margin: 10px;
-  font-size: 3vh;
+  font-size: calc(1vw*5);
   display: flex;
+  align-items: center;
   /*justify-content: space-around;*/
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
-.word {
+/* .word {
   box-sizing: border-box;
   width: 33.33%;
-  /*border: 1px solid blue;*/
   text-align: center;
   background-color: rgb(104, 223, 35);
 }
@@ -32,7 +32,6 @@ div {
 .translation {
   box-sizing: border-box;
   width: 33.33%;
-  /*border: 1px solid blue;*/
   background-color: rgb(201, 139, 139);
   text-align: center;
   color: rgb(201, 139, 139);
@@ -41,12 +40,43 @@ div {
 .help {
   box-sizing: border-box;
   width: 33.33%;
- /*border: 1px solid blue;*/
   color: bisque;
   background-color: bisque;
   text-align: center;
   overflow: hidden;
+}  */
+
+
+
+
+.word {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  background-color: rgb(104, 223, 35);
 }
+
+.translation {
+  box-sizing: border-box;
+  width: 50%;
+  background-color: rgb(201, 139, 139);
+  text-align: center;
+  color: rgb(201, 139, 139);
+}
+
+.help {
+  box-sizing: border-box;
+  width: 100%;
+  color: bisque;
+  background-color: bisque;
+  text-align: center;
+  overflow: hidden;
+} 
+
+
+
+
+
 
 .translation:hover {
   color: black;
