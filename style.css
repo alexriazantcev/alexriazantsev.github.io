@@ -1,0 +1,55 @@
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.word-line {
+  border: 1px solid blue;
+  /*background-color: bisque;*/
+  margin: 10px;
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.word {
+  box-sizing: border-box;
+  
+  /*border: 1px solid blue;*/
+  text-align: center;
+  background-color: rgb(190, 153, 106);
+}
+
+.translation {
+  box-sizing: border-box;
+  /*border: 1px solid blue;*/
+  background-color: rgb(201, 139, 139);
+  
+  color: bisque;
+}
+
+.help {
+  box-sizing: border-box;
+ /*border: 1px solid blue;*/
+  color: bisque;
+  background-color: bisque;
+}
+
+.translation:hover {
+  color: black;
+}
+
+.help:hover {
+  color: black;
+}
+
+.translation:focus {
+  color: black;
+}
+
+.help:focus {
+  color: black;
+}
