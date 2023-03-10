@@ -7,8 +7,9 @@ a {
   text-decoration: none;
 }
 
-div {
-  border-radius: 10%;
+div, button {
+  border-radius: 20%;
+  font-size: calc(1vw*5);
 }
 
 .word-line {
@@ -96,4 +97,12 @@ div {
 
 .help:visited {
   color: red;
+}
+
+.click_me::before {
+  content: 'слово на русском';
+}
+
+.clicked::before {
+  content: 'слово на португ';
 }
