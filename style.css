@@ -2,76 +2,68 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+  
+  margin-bottom: 20px;
+  align-items: center;
+  height: 50px;
+  font-size: calc(1vw*5);
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center; 
+  margin: 0;
+  font-size: 1em;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-div, button {
-  border-radius: 20%;
-  font-size: calc(1vw*5);
-}
+
 
 .word-line {
   
-  background-color: rgb(246, 255, 196);
-  margin: 10px;
+  margin: 5vh 1vh 5vh 1vh;
   font-size: calc(1vw*5);
   display: flex;
   align-items: center;
   /*justify-content: space-around;*/
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
-/* .word {
-  box-sizing: border-box;
-  width: 33.33%;
-  text-align: center;
-  background-color: rgb(104, 223, 35);
-}
-
-.translation {
-  box-sizing: border-box;
-  width: 33.33%;
-  background-color: rgb(201, 139, 139);
-  text-align: center;
-  color: rgb(201, 139, 139);
-}
-
-.help {
-  box-sizing: border-box;
-  width: 33.33%;
-  color: bisque;
-  background-color: bisque;
-  text-align: center;
-  overflow: hidden;
-}  */
-
-
 
 
 .word {
+  margin: 10px;
+  padding: 5px;
   box-sizing: border-box;
-  width: 50%;
+  width: 45%;
   text-align: center;
-  background-color: rgb(104, 223, 35);
+  border: 3px solid grey;
+  border-radius: 15px;
 }
 
 .translation {
-  box-sizing: border-box;
-  width: 50%;
-  background-color: rgb(201, 139, 139);
+  margin: 10px;
+  padding: 5px;
   text-align: center;
-  color: rgb(201, 139, 139);
+  box-sizing: border-box;
+  width: 45%;
+  border: 3px solid grey;
+  border-radius: 15px;
 }
 
 .help {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
   box-sizing: border-box;
   width: 100%;
-  color: bisque;
-  background-color: bisque;
-  text-align: center;
-  overflow: hidden;
+  border: 3px solid grey;
+  border-radius: 15px;
 } 
 
 
@@ -105,4 +97,16 @@ div, button {
 
 .clicked::before {
   content: 'слово на португ';
+}
+
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.invisible-div {
+  visibility:hidden;
 }

@@ -6,50 +6,75 @@
     -->
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Proverka</title>
+    <title>Учим португальский язык</title>
 </head>
 <body>
+<header>
+  <h1>Учим португальские слова</h1>
+</header>
 
-<h1 style="font-size: 1.5em; text-align: center;">Учим португальские слова</h1>
+<!-- меню с выбором темы-->
+<ul>
+    <li><a>Дом</a></li>
+    <li><a>Семья</a></li>
+    <li><a>Основные глаголы</a></li>
+</ul>
+
+
 
 <div class="word-line">
-    <div class="word">Спать</div>
-    <div class="translation">Dormir</div>
-    <div class="help">дремать</div>
+    <div class="word">Дом</div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            a casa
+        </span>
+    </div>
+    <div class="help">подсказка: ???</div>
 </div>
+
+
+<div class="word-line">
+    <div class="word">квартира</div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            O apartamento
+        </span>
+    </div>
+    <div class="help">подсказка: апартаменты</div>
+</div>
+
+<div class="word-line">
+    <div class="word">гостиная</div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            sala de estar
+        </span>
+    </div>
+    <div class="help">подсказка: зал</div>
+</div>
+
  
+<div class="word-line">
+    <div class="word">понимать</div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            perceber
+        </span>
+    </div>
+    <div class="help">подсказка: -</div>
+</div>
 
 
 <div class="word-line">
-    <div class="word">Дверь</div>
-    <div class="translation">A porta</div>
-    <div class="help">Портал</div>
+    <div class="word">знать</div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            saber
+        </span>
+    </div>
 </div>
 
 
-<div class="word-line">
-    <div class="word">Окно</div>
-    <div class="translation">A janela</div>
-    <div class="help">жалюзи</div>
-</div>
-
-<button style="font-size: 1.5em;" class="click_me" onclick="this.className='clicked'"></button>
-<button style="font-size: 1.5em;" onmouseover="this.style.content = 'fff';">fghfgh</button>
-<button style="{font-size: 1.5em}
- ::before {content: 'слово на русском'}"></button>
- 
- <div>
-<button>
-    <span style="visibility: inherit;" onclick="this.style.visibility = 'hidden';">
-        dfgdfgdg
-    </span>
-</button>
-</div>
-
-
-<p style="visibility: inherit;">dfgdfgdg</p>
-
-<p><span style="visibility: inherit;" onmouseover="this.style.visibility = 'hidden';">dfgdfgdg</span></p>
 
 </body>
 </html>
