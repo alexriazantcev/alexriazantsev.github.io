@@ -7,6 +7,24 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Учим португальский язык</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    
+        function btnClick() {
+             $("ul").show(1000);
+          };
+        
+        function mix() {
+            var parent = $(".myItems");
+            var divs = parent.children();
+            while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+            }
+        };
+
+    </script>
+
 </head>
 <body>
 <header>
@@ -19,11 +37,12 @@
 <ul>
     <li><a href="html/house.html">Дом</a></li>
     <li><a>Семья</a></li>
-    <li><a>Основные глаголы</a></li>
+    <li><a href="html/verbs.html">Основные глаголы</a></li>
+    <li><a href="html/pipocas-21-pps.html">Pipocas-21-прошедшее время</a></li>
 </ul>
 
 
-
+<content class="myItems">
 <div class="word-line">
     <div class="word">Дом</div>
     <div class="translation">
@@ -75,8 +94,57 @@
         </span>
     </div>
 </div>
+</content>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  $(document).ready(function reorder() {
+           var grp = $(".myItems").children();
+           var cnt = grp.length;
+ 
+           var temp,x;
+           for (var i = 0; i < cnt; i++) {
+               temp = grp[i];
+             x = Math.floor(Math.random() * cnt);
+             grp[i] = grp[x];
+             grp[x] = temp;
+         }
+         $(grp).remove();
+         $(".myItems").append($(grp));
+       });
+ </script>
 
 
+
+
+
+
+<!--
+<script>
+
+$(document).ready(function() {
+     $("ul").hide(1000);
+  });
+
+</script>
+-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    var parent = document.body;
+    var divs = document.body.children;
+   
+    console.log(parent)
+    console.log(divs.length)
+
+});
+
+</script>
+
+
+<button type="submit" name="button" onclick="btnClick();"> Submit</button>
+
+<input type="button" value="Выполнить скрипт JavaScript" onclick="mix();"/>
 
 </body>
 </html>
