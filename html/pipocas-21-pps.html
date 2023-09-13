@@ -77,7 +77,51 @@
 </div>
 
 
+<div class="word-line">
+   
+    <audio id="audio" src="https://www.soundjay.com/ambient/people-in-lounge-1.mp3" autoplay="false" ></audio>
+    <a onclick="playSound();">Play</a>
+    <script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
 
+
+</div>
+
+<!-- тестируем включение аудио нажатием через онклик на кнопке-->
+<div class="word-line">
+    <div class="word" id="palavra" onclick="new Audio('../audio/palavra.m4a').play();">
+        Palavra
+    </div>
+    <div class="translation">
+        <span class="invisible" onclick="this.classList.toggle('invisible');">
+            palavra
+        </span>
+    </div>
+</div>
+
+
+<!-- тестируем примеры по математике-->
+<div class="numbers-line">
+    <div class="word">
+        dois
+    </div>
+    <div class="word">
+        +
+    </div>
+    <div class="word">
+        quatro
+    </div>
+    <div class="word">
+        =
+    </div>
+    <div class="word">
+        
+    </div>
+</div>
 
 
 

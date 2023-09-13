@@ -7,13 +7,19 @@ header {
   margin-bottom: 20px;
   align-items: center;
   vertical-align: bottom;
-  height: 100px;
+  height: auto;
   font-size: calc(1vw*6);
   background-color: rgb(206, 204, 204);
 }
 
 h1 {
   font-size: calc(1vw*6);
+  text-align: center; 
+  margin: 0;
+}
+
+h2 {
+  font-size: calc(1vw*5);
   text-align: center; 
   margin: 0;
 }
@@ -38,15 +44,41 @@ li {
   /*justify-content: space-around;*/
   flex-wrap: wrap;
   justify-content: space-evenly;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.numbers-line {
+  
+  margin: 5vh 1vh 5vh 1vh;
+  font-size: calc(1vw*5);
+  display: flex;
+  align-items: center;
+  /*justify-content: space-around;*/
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.answer-line {
+  
+  margin: 5vh 1vh 5vh 1vh;
+  font-size: calc(1vw*5);
+  display: flex;
+  align-items: center;
+  /*justify-content: space-around;*/
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  min-height: 50px;
 }
 
 
 .word {
   margin: 10px;
-  padding: 25px;
+  padding: 10px;
   background-color: rgb(110, 236, 110);
   box-sizing: border-box;
-  width: 45%;
+  width: auto;
   text-align: center;
   border: 3px solid grey;
   border-radius: 15px;
